@@ -1,0 +1,49 @@
+# ==========================================
+# Unity 官方标准忽略规则
+# ==========================================
+
+# 1. 缓存和临时文件夹（这几个体积巨大，绝对不要传）
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# 2. 内存捕获文件夹（Profile 数据）
+/[Mm]emoryCaptures/
+
+# 3. 自动生成的解决方案和工程文件（不同电脑生成的路径不同，传了会冲突）
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# 4. 系统文件和编辑器文件
+.vs/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 5. 构建输出文件
+*.apk
+*.aab
+*.unitypackage
+*.app
+crashlytics-build.properties
+
+# 6. 自动生成的元数据文件（可选，有些团队要求传，但一般单体项目不传）
+# 注意：Assets 文件夹里面的 *.meta 文件是必须传的！这里忽略的是根目录生成的
+sysinfo.txt
